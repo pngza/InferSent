@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "b41bfc29d02fe7ca90523c888eb526c59993897241b58eaeccf2f05280d8a2ce"
+            "sha256": "355df9894ce78ce0a44f829273807df0bc4abeb0ad8cc87f6f1d8d3335a9d2a1"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -134,6 +134,21 @@
             ],
             "index": "pypi",
             "version": "==1.11.0"
+        },
+        "torch": {
+            "file": "http://download.pytorch.org/whl/cu90/torch-0.3.1-cp27-cp27mu-linux_x86_64.whl",
+            "hashes": [
+                "sha256:3e1d77faad3cd6c9009249406f333239c1dd06321b0a27142cf996297af5f0e5",
+                "sha256:5af3ff750ca2b78b86cbb2da1689a70ffcab88b801bcbf92d6810e182526e654",
+                "sha256:67722a24be80beca362eb6e612b5e29f358143d62f2b53729f2c6b4184f89d09",
+                "sha256:9bd42b43a1e078ca40c73d4c585ae921dd2271427f55f589d544508433205637",
+                "sha256:bf8f79bd2e01341d9983390d23411f90883f13352e3c835e4ec136456a4ab7fb",
+                "sha256:db31189d3f4008db7aa988a912cbc358f006151da4f10f1448ab87bcc0477829",
+                "sha256:fc0894f970693fcdb369d887c1662ff96a069690747d79a43d18f6115808026b"
+            ],
+            "index": "pypi",
+            "markers": null,
+            "version": "==0.3.1"
         }
     },
     "develop": {}

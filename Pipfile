@@ -10,6 +10,7 @@ scipy = "==1.0.0"
 six = "==1.11.0"
 Pillow = "==5.0.0"
 PyYAML = "==3.12"
+torch = {file = "http://download.pytorch.org/whl/cu90/torch-0.3.1-cp27-cp27mu-linux_x86_64.whl"}
 
 [dev-packages]
 

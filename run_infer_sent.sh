@@ -16,7 +16,8 @@ for optimizer in ""; do
             $optimizer \
             --encoder_type=$encoder_type \
             --gpu_id=0 \
-            --outputmodelname=infersent-${group_timestamp}-${idx}-${rnd}.pkl
+            --outputdir=tmp/ \
+            --outputmodelname=infersent-${group_timestamp}-${idx}-${rnd}.pkl \
         &> >(tee stderr tmp/infersent-${group_timestamp}-${idx}-${rnd}.log)
     done
 done

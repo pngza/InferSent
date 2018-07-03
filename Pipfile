@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+nltk = "==3.2.5"
+numpy = "==1.14.1"
+scipy = "==1.0.0"
+six = "==1.11.0"
+Pillow = "==5.0.0"
+PyYAML = "==3.12"
+
+[dev-packages]
+
+[requires]
+python_version = "2.7"

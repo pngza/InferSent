@@ -7,7 +7,7 @@ run_idx=0
 
 # for optimizer in "--optimizer=adam"; do
 for optimizer in ""; do
-    for encoder_type in ConvNetEncoder; do
+    for encoder_type in InferSent ConvNetEncoder; do
         ((run_idx+=1))
         idx=$(printf "%02d" $run_idx)
         rnd=$(pwgen 5 1)

@@ -733,6 +733,14 @@ class ConvNetEncoder(InferSent):
         self.enc_lstm_dim = config['enc_lstm_dim']
         self.pool_type = config['pool_type']
 
+        self.version = 1
+        assert self.version in [1, 2]
+        if self.version == 1:
+            self.bos = '<s>'
+            self.eos = '</s>'
+            self.max_pad = True
+            self.moses_tok = False
+
         self.convnet1 = nn.Sequential(
             nn.Conv1d(self.word_emb_dim, 2*self.enc_lstm_dim, kernel_size=3,
                       stride=1, padding=1),
@@ -754,7 +762,8 @@ class ConvNetEncoder(InferSent):
             nn.ReLU(inplace=True),
             )
 
-
+    def is_cuda(self):
+        return True
 
     def forward(self, sent_tuple):
         # sent_len: [max_len, ..., min_len] (batch)

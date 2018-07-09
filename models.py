@@ -723,9 +723,10 @@ class InnerAttentionYANGEncoder(nn.Module):
 """
 Hierarchical ConvNet
 """
-class ConvNetEncoder(nn.Module):
+# class ConvNetEncoder(nn.Module):
+class ConvNetEncoder(InferSent):
     def __init__(self, config):
-        super(ConvNetEncoder, self).__init__()
+        super(InferSent, self).__init__()  # grandparent
 
         self.bsize = config['bsize']
         self.word_emb_dim = config['word_emb_dim']

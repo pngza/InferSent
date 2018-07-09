@@ -15,7 +15,7 @@ for optimizer in ""; do
         unbuffer python ./train_nli.py \
             $optimizer \
             --encoder_type=$encoder_type \
-            --gpu_id=0 \
+            --gpu_id=3 \
             --outputdir=tmp/ \
             --outputmodelname=infersent-${group_timestamp}-${idx}-${rnd}.pkl \
         &> >(tee stderr tmp/infersent-${group_timestamp}-${idx}-${rnd}.log)
